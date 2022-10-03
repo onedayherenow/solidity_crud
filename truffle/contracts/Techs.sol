@@ -5,7 +5,7 @@ contract Techs {
 
     string [] myTechs;
 
-    // ADD A NEW TECHNOLOGY TO OUR ARRAY
+    // CREATE AND ADD A NEW TECHNOLOGY TO OUR ARRAY
     function addTech(string memory techName) public {
         myTechs.push(techName);
     }
@@ -17,6 +17,28 @@ contract Techs {
             returns true;
         } 
         return false
+    }
+
+    // DELETE 
+    function deleteTech(uint techIndex) public returns (bool) {
+
+        if(myTechs.length > techIndex) {
+            
+            for(uint i = techIndex; i < myTechs.length-1; i++) {
+                
+                myTech[i] = myTechs[i+1];
+            }
+
+            myTechs.pop();
+
+            return true;
+        }
+        return false;
+    }
+
+    // READ
+    function getTechs() public view returns (string[] memory) {
+        return myTechs
     }
 
 }
