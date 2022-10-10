@@ -14,9 +14,9 @@ contract Techs {
     function updateTech(uint techIndex, string memory newTechName) public returns (bool) {
         if(myTechs.length > techIndex) {
             myTechs[techIndex] = newTechName;
-            returns true;
+            return true;
         } 
-        return false
+        return false;
     }
 
     // DELETE 
@@ -26,7 +26,7 @@ contract Techs {
             
             for(uint i = techIndex; i < myTechs.length-1; i++) {
                 
-                myTech[i] = myTechs[i+1];
+                myTechs[i] = myTechs[i+1];
             }
 
             myTechs.pop();
@@ -38,7 +38,7 @@ contract Techs {
 
     // READ
     function getTechs() public view returns (string[] memory) {
-        return myTechs
+        return myTechs;
     }
 
 }
