@@ -49,6 +49,11 @@ module.exports = {
     network_id: "*",       // Any network (default: none)
     },
     //
+    ganache: {
+      host: "127.0.0.1",
+      port: 5777,
+      network_id: "*",
+    }
     // An additional network, but with some advanced options…
     // advanced: {
     //   port: 8777,             // Custom port
