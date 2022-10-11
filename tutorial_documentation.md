@@ -9,8 +9,9 @@ such as Truffle, ganache, React, Web3, & Redux
 Together they complete full stack development from client to server
 *We are in this tutorial using the REACT box provided by truffle
 ("not digitally signed" error solution
-Terminal Bypass:  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  )
+Terminal Bypass:    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass   )
 
+5.  Truffle for VSCode and configuration file
 
 
 
